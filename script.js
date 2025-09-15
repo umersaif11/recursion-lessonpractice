@@ -18,4 +18,5 @@ function pow(base , exp) {
         return base * pow(base, exp - 1)
     }
 }
-
+//Question 3: Calculate factorial
+//Write a function that returns the factorial of a number.
