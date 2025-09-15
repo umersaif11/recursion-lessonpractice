@@ -20,3 +20,10 @@ function pow(base , exp) {
 }
 //Question 3: Calculate factorial
 //Write a function that returns the factorial of a number.
+function factorial(n) {
+    if(n === 1){
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
