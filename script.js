@@ -12,5 +12,10 @@ function sumRange(n, total = 0) {
 //Write a function called power which takes in a base and an exponent. 
 // If the exponent is 0, return 1.
 function pow(base , exp) {
-    
+    if(exp === 0) {
+        return 1;
+    } else {
+        return base * pow(base, exp - 1)
+    }
 }
+
