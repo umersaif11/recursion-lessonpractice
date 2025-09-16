@@ -34,5 +34,7 @@ function factorial(n) {
 function All(array, callback, i = 0) {
     if(i === array.length){
         return true;
+    } else if(!callback(array[i])) {
+        return false;
     } 
 }
