@@ -46,6 +46,8 @@ function all(array, callback, i = 0) {
 function productOfArray(array, i = 0){
     if(array.length === 0){
         return 'Oops! Empty Array';
-    }
+    }else if(i === array.length - 1){
+        return array[array.length - 1];
+    } 
 }
 console.log(productOfArray([]));
