@@ -44,12 +44,12 @@ function all(array, callback, i = 0) {
 //Write a function called productOfArray which takes in an array 
 // of numbers and returns the product of them all
 function productOfArray(array, i = 0){
-    if(array.length === 0){
-        return 'Oops! Empty Array';
-    }else if(i === array.length - 1){
-        return array[array.length - 1];
+    if(i === array.length){
+        return 1;
     } else {
         return array[i] * productOfArray(array, i + 1);
     }
+
 }
 console.log(productOfArray([]));
+
