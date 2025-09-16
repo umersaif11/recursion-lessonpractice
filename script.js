@@ -31,10 +31,12 @@ function factorial(n) {
 //Write a function called all which accepts an array and a 
 // callback and returns true if every value in the array returns
 //  true when passed as parameter to the callback function
-function All(array, callback, i = 0) {
+function all(array, callback, i = 0) {
     if(i === array.length){
         return true;
     } else if(!callback(array[i])) {
         return false;
-    } 
+    } else {
+        return all(array, callback, i + 1);
+    }
 }
