@@ -40,3 +40,10 @@ function all(array, callback, i = 0) {
         return all(array, callback, i + 1);
     }
 }
+//Question 5: Product of an array
+//Write a function called productOfArray which takes in an array 
+// of numbers and returns the product of them all
+function productOfArray(array, i = 0){
+   
+}
+console.log(productOfArray([]));
