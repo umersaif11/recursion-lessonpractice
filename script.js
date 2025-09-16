@@ -32,5 +32,7 @@ function factorial(n) {
 // callback and returns true if every value in the array returns
 //  true when passed as parameter to the callback function
 function All(array, callback, i = 0) {
-     
+    if(i === array.length){
+        return true;
+    } 
 }
