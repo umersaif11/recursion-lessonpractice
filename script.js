@@ -66,7 +66,9 @@ function contains(object, value) {
     for(let prop in object){
         if(typeof object[prop] === 'object'){
             let found = contains(object[prop], value);
-            
+            if(found){
+                return true;
+            }
         }
     }
     return false;
