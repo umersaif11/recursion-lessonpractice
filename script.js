@@ -63,7 +63,9 @@ function contains(object, value) {
      .includes(value)){
     return true;
   }
-    
+    for(let prop in object){
+        
+    }
     
 }
 var nestedObject = {
