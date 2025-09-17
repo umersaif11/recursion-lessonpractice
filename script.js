@@ -73,19 +73,10 @@ function contains(object, value) {
     }
     return false;
 }
-var nestedObject = {
-    data: {
-        info: {
-            stuff: {
-                thing: {
-                    moreStuff: {
-                        magicNumber: 44,
-                        something: 'foo2'
-                    }
-                }
-            }
-        }
-    }
+// Question 7: Parse a multi-dimensional array
+// Given a multi-dimensional integer array, return 
+// the total number of integers stored inside this array
+function totalIntegers(array, i = 0){
+    
 }
-console.log(contains(nestedObject, 'foo2u'));
 
