@@ -59,7 +59,10 @@ function contains(object, value) {
     || object === null){
     return false;
   };
-  
+  if(Object.values(object)
+     .includes(value)){
+    return true;
+  }
     
     
 }
