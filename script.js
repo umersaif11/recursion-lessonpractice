@@ -51,5 +51,31 @@ function productOfArray(array, i = 0){
     }
 
 }
-console.log(productOfArray([]));
+//Question 6: Search JS object
+//Write a function called contains that searches for a value
+//in a nested object. It returns true if the object contains that value.
+function contains(object, value) {
+  if(typeof object !== 'object' 
+    || object === null){
+    return false;
+  };
+  
+    
+    
+}
+var nestedObject = {
+    data: {
+        info: {
+            stuff: {
+                thing: {
+                    moreStuff: {
+                        magicNumber: 44,
+                        something: 'foo2'
+                    }
+                }
+            }
+        }
+    }
+}
+console.log(contains(nestedObject, 'foo2u'));
 
