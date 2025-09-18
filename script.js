@@ -76,7 +76,6 @@ function contains(object, value) {
 // Question 7: Parse a multi-dimensional array
 // Given a multi-dimensional integer array, return 
 // the total number of integers stored inside this array
-//var seven = totalIntegers([[[5], 3], 0, 2, ['foo'], [], [4, [5, 6]]]); // 7
 function totalIntegers(array, i = 0, total = 0){
     if(!Array.isArray(array[i]) && Number.isInteger(array[i])){
         total++;
@@ -96,6 +95,14 @@ function totalnum(array){
     }
     return total;
 }
-var arr = [0, [[5], 3], 2, ['foo'], [], [4, [5, 6]],8,[7]];
-console.log(totalnum(arr));
+//Question 8:
+//Write a function that sums squares of numbers
+//  in list that may contain more lists
+
+function SumSquares(array){
+    let total = 0;
+    
+    
+}
+
 
