@@ -104,7 +104,9 @@ function SumSquares(array){
     for(let i = 0; i < array.length; i++){
         if(Number.isInteger(array[i])){
             total += (array[i] * array[i]);
-        } 
+        } else if(Array.isArray(array[i])){
+            total += SumSquares(array[i])
+        }
     }
     
 }
