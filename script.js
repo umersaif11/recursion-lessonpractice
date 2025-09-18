@@ -87,7 +87,9 @@ function totalIntegers(array, i = 0, total = 0){
 }
 function totalnum(array){
     let total = 0;
-    
+    for(let i = 0; i < array.length; i++){
+         
+    }
     
 }
 var arr = [0, [[5], 3], 2, ['foo'], [], [4, [5, 6]],8,[7]];
