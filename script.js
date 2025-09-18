@@ -123,5 +123,6 @@ function replicate(times, number, i = 0, array = []){
     }else {
         array.push(number);
     }
+    return replicate(times, number, i + 1, array)
 
 }
