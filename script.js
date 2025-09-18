@@ -120,7 +120,8 @@ function replicate(times, number, i = 0, array = []){
     if(times < 0) return [];
     if(i >= times){
         return array;
+    }else {
+        array.push(number);
     }
-    
 
 }
