@@ -90,7 +90,9 @@ function totalnum(array){
     for(let i = 0; i < array.length; i++){
         if(Number.isInteger(array[i])){
             total++; 
-        } 
+        } else if(Array.isArray(array[i])){
+            total = total + totalnum(array[i]);
+        }
     }
     
 }
