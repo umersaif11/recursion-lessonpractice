@@ -94,7 +94,7 @@ function totalnum(array){
             total = total + totalnum(array[i]);
         }
     }
-    
+    return total;
 }
 var arr = [0, [[5], 3], 2, ['foo'], [], [4, [5, 6]],8,[7]];
 console.log(totalnum(arr));
