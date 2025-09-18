@@ -85,6 +85,7 @@ function totalIntegers(array, i = 0, total = 0){
     }
 }
 function totalnum(array){
+    if(array.length === 0) return 0;
     let total = 0;
     for(let i = 0; i < array.length; i++){
         if(Number.isInteger(array[i])){
@@ -100,6 +101,7 @@ function totalnum(array){
 //  in list that may contain more lists
 
 function SumSquares(array){
+    if(array.length === 0) return 0;
     let total = 0;
     for(let i = 0; i < array.length; i++){
         if(Number.isInteger(array[i])){
