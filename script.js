@@ -88,7 +88,9 @@ function totalIntegers(array, i = 0, total = 0){
 function totalnum(array){
     let total = 0;
     for(let i = 0; i < array.length; i++){
-         
+        if(Number.isInteger(array[i])){
+            total++; 
+        } 
     }
     
 }
