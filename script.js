@@ -118,7 +118,9 @@ function SumSquares(array){
 //return [5,5,5]. If the times argument is negative, return an empty array.
 function replicate(times, number, i = 0, array = []){
     if(times < 0) return [];
-    
+    if(i >= times){
+        return array;
+    }
     
 
 }
