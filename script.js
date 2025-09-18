@@ -108,7 +108,7 @@ function SumSquares(array){
             total += SumSquares(array[i])
         }
     }
-    
+    return total;
 }
 
 
